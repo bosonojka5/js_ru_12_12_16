@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react'
 import ArticleList from './ArticleList'
-import UserForm from './UserForm'
+import DateTimePicker from './DateTimePicker/DateTimePicker'
 import Filter from './Filter'
 
 function AppContainer(props) {
     return (
         <div>
-            <UserForm />
+            <DateTimePicker />
             <Filter articles = {props.articles}/>
             <ArticleList articles={props.articles}/>
         </div>
